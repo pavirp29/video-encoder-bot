@@ -1,8 +1,8 @@
 version: '3'
 services:
   webapp:
+    container_name: webapp
     build:
       context: .
       dockerfile: Dockerfile
-    image: video-encoder-bot:latest
     restart: on-failure
