@@ -5,3 +5,4 @@ services:
       context: .
       dockerfile: Dockerfile
     image: video-encoder-bot:latest
+    restart: on-failure
