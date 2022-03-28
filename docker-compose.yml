@@ -1,0 +1,7 @@
+version: 3
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: video-encoder-bot:latest
