@@ -1,8 +1,13 @@
 version: '3'
 services:
-  webapp:
-    container_name: webapp
+  videoencoderbot:
+    container_name: videoencoderbot
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - API_ID=$API_ID
+      - API_HASH=$API_HASH
+      - BOT_TOKEN=$BOT_TOKEN
+      - SUDO_USERS=$SUDO_USERS
     restart: on-failure
